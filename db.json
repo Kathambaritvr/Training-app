@@ -1,0 +1,936 @@
+{
+	"courses": [
+		{
+			"id": "1",
+			"name": "Java Environment Basics",
+			"description": "Java Environment",
+			"subject": [
+				{
+					"id": "11",
+					"name": "Set the Java Path and Class Path",
+					"description": "Set the Path Variable"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"name": "OOPs",
+			"description": "Object Oriented Programming",
+			"subject": [
+				{
+					"id": "21",
+					"name": "Introduction",
+					"description": "Introduction to OOPs"
+				},
+				{
+					"id": "22",
+					"name": "Abstraction",
+					"description": "Abstraction desc"
+				},
+				{
+					"id": "23",
+					"name": "Encapsulation",
+					"description": "Encapsulation desc"
+				},
+				{
+					"id": "24",
+					"name": "Inheritance",
+					"description": " Inheritance desc"
+				},
+				{
+					"id": "25",
+					"name": "Polymorphism",
+					"description": " Polymorphism desc"
+				},
+				{
+					"id": "26",
+					"name": "Overloading",
+					"description": " overloading desc"
+				},
+				{
+					"id": "27",
+					"name": "Overriding",
+					"description": " Overriding desc"
+
+				},
+				{
+					"id": "28",
+					"name": "Aggregation",
+					"description": "Agggregation desc"
+					
+				},
+				{
+					"id": "29",
+					"name": "Composition",
+					"description": " Composition desc"
+					
+				}
+			]
+		},
+		{
+			"id": "3",
+			"name": "Socket Programming",
+			"description": " Two programs Running on the network",
+			"subject": [
+				{
+					"id": "1",
+					"name": " client and server communication",
+					"description": "one-way  desc"
+				},
+				{
+					"id": "2",
+					"name": "server and client communication",
+					"description": "  one-way desc"
+				},
+				{
+					"id": "3",
+					"name": "Server sends to the file Contents to the client",
+					"description": "two-way non-continous"
+				},
+				{
+					"id": "4",
+					"name": "chat communication",
+					"description": "two-way continous"
+				}
+			]
+		},
+               {
+					"id": "4",
+					"name": "Thread  Programming",
+					"description": "single path Execution desc",
+					"subject": [
+						{
+							"id": "1",
+							"name": " Multhithread Programming",
+							"description": "multhithread   desc"
+						}
+
+					]
+			   },
+			   
+              {
+				"id": "5",
+				"name": "Rmi Programming",
+				"description": "Remote method Invaction desc",
+				"subject": [
+					{
+						"id": "1",
+						"name": " Calculate Programming",
+						"description": "Calculate  desc"
+					}
+
+				]
+		   }
+		
+			
+		
+	],
+	"topics": [
+		{
+			"id": "11",
+			"name": "Java Environment Setup",
+			"description": "Java Environment Setup",
+			"playlist": [
+				{
+					"id": "1",
+					"name": "Setting up the Java Path",
+					"description": "Setting up the Java and Class Path",
+					"url": "https://www.youtube.com/embed/vhBNV8no4CI"
+				}
+			],
+			"programs": [],
+			"sites": [
+				{
+					"id": "1",
+					"name": "Java Environment Setup",
+					"description": "Java Environment Setup",
+					"url": "https://www.sitesbay.com/java/java-classpath-setting"
+				}
+			],
+			"documents": [],
+			"slides": [
+				{
+					"id": "1",
+					"name": "slide 1",
+					"description": "slide 1",
+					"master": {
+						"id": "1",
+						"name": "Java Path",
+						"description": "For running java application, first we need to know how to set both JAVA path and Class Path environment variables.",
+						"videos": [
+							{
+								"id": "1"
+							}
+						],
+						"programs": [],
+						"sites": [
+							{
+								"id": "1"
+							}
+						],
+						"documents": []
+					},
+					"student": {
+						"id": "1",
+						"name": "Setting up path",
+						"description": "Ok Sir",
+						"videos": [],
+						"programs": [],
+						"documents": []
+					}
+				}
+			]
+		},
+		{
+			"id": "21",
+			"name": "Introduction to OOPs",
+			"description": "Introduction to OOPs",
+			"programs": [],
+			"playlist": [
+				{
+					"id": "1",
+					"name": "POPs vs OOPs",
+					"description": "POPs vs OOPs",
+					"url": "https://www.youtube.com/embed/70sld4fYcqU"
+				}
+			],
+			"sites": [],
+			"documents": [],
+			"slides": [
+				{
+					"id": "1",
+					"name": "Introduction to OOPs",
+					"description": "Introduction to OOPs",
+					"master": {
+						"id": "1",
+						"name": "Java Path",
+						"description": "To understand OOPs concepts, first we need to know the difference between \n Procedural Oriented Programming and Object Oriented Programming",
+						"videos": [
+							{
+								"id": "1"
+							}
+						],
+						"programs": [],
+						"documents": []
+					},
+					"student": {
+						"id": "1",
+						"name": "Introduction to OOPs",
+						"description": "Ok Sir",
+						"videos": [],
+						"programs": [],
+						"documents": [],
+						"sites": []
+					}
+				},
+				{
+					"id": "1",
+					"name": "Introduction to OOPs",
+					"description": "Introduction to OOPs",
+					"img": "assets/ooad/Slide1.JPG",
+					"master": {
+						"id": "1",
+						"name": "Java Path",
+						"description": "See the picture. What you are seeing in this picture?",
+						"videos": [],
+						"programs": [],
+						"documents": []
+					},
+					"student": {
+						"id": "1",
+						"name": "",
+						"description": "I am seeing couple of apple, mango, cabbage...",
+						"videos": [],
+						"programs": [],
+						"documents": [],
+						"sites": []
+					}
+				},
+				{
+					"id": "2",
+					"name": "Introduction to OOPs",
+					"description": "Introduction to OOPs",
+					"master": {
+						"id": "1",
+						"name": "OOPs",
+						"description": "We know the vegetables and fruits having calories...\n I want to get the calorie from each food. \n How do you write a program?",
+						"videos": [],
+						"programs": [],
+						"documents": []
+					},
+					"student": {
+						"id": "1",
+						"name": "",
+						"description": "We can write getCalorie() method in each Apple and Cabbage Class \n and retrieve the calorie value...",
+						"videos": [],
+						"programs": [],
+						"documents": [],
+						"sites": []
+					}
+				},
+				{
+					"id": "3",
+					"name": "Introduction to OOPs",
+					"description": "Introduction to OOPs",
+					"img": "assets/ooad/Slide2.JPG",
+					"master": {
+						"id": "1",
+						"name": "OOPs",
+						"description": "Good... For writing programs in OOPs languages, we first think about following steps:\n1. Finding all objects in the problem; \n 2. Template these identified objects;\n3. Group them based on the common feature\n4. Put into hierarchy. ",
+						"videos": [],
+						"programs": [],
+						"documents": []
+					},
+					"student": {
+						"id": "1",
+						"name": "",
+						"description": "Can you explain in detail...sir",
+						"videos": [],
+						"programs": [],
+						"documents": [],
+						"sites": []
+					}
+				}
+				
+			]
+		},
+		{
+			"id": "22",
+			"name": "abstraction",
+			"description": "description",
+			"programs": [
+				{
+					"id": "1",
+					"name": "Abstraction Program",
+					"description": "Abstraction Program",
+					"url": "https://raw.githubusercontent.com/GlobalLabstvr/training-programs/master/core-java/abstraction/Shape.java"
+				}
+			],
+			"playlist": [
+				{
+					"id": "1",
+					"name": "Abstraction",
+					"description": "Abstraction",
+					"url": "https://www.youtube.com/embed/6V1sr0XV_Ng"
+				}
+			],
+			"slides": [
+				{
+					"id": "1",
+					"name": "slide 1",
+					"description": "slide 1",
+					"master": {
+						"id": "1",
+						"name": "Abstraction",
+						"description": "What do you know about the Abstraction?",
+						"videos": [],
+						"programs": [],
+						"documents": []
+					},
+					"student": {
+						"id": "1",
+						"name": "Abstraction",
+						"description": "This is very abstract concept sir... Can't explain in words...",
+						"videos": [],
+						"programs": [],
+						"documents": []
+					}
+				},
+				{
+					"id": "2",
+					"name": "slide 2",
+					"description": "slide 2",
+					"master": {
+						"id": "1",
+						"name": "Abstraction",
+						"description": "Good!!!",
+						"videos": [
+							{
+								"id": "1"
+							}
+						],
+						"programs": [
+							{
+								"id": "1"
+							}
+						],
+						"documents": []
+					},
+					"student": {
+						"id": "1",
+						"name": "Abstraction",
+						"description": "Ok Sir...",
+						"videos": [],
+						"programs": [],
+						"documents": [
+							{
+								"id": "1",
+								"name": "Abstraction docs",
+								"url": "https://youtu.be/zZq_XDhU-rc"
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": "23",
+			"name": "encapsulation",
+			"description": "description",
+			"playlist": [
+				{
+					"id": "1",
+					"name": "encapsulation ",
+					"description": "encapsulation ",
+					"url": "http://www.html5videoplayer.net/videos/toystory.mp4"
+				},
+				{
+					"id": "2",
+					"name": "Encapsulation Details",
+					"description": "Encapsulation Details",
+					"url": "https://youtu.be/zZq_XDhU-rc"
+				}
+			],
+				"slides": [
+					{
+						"id": "1",
+						"name": "slide 1",
+						"description": "slide 1",
+						"master": {
+							"id": "1",
+							"name": "Encapsulation",
+							"description": "What do you know about the Encapsulation?",
+							"videos": [],
+							"programs": [],
+							"documents": []
+						},
+						"student": {
+							"id": "1",
+							"name": "Encapsulation",
+							"description": "Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit",
+							"videos": [],
+							"programs": [],
+							"documents": []
+						}
+					},
+					{
+						"id": "2",
+						"name": "slide 2",
+						"description": "slide 2",
+						"master": {
+							"id": "1",
+							"name": "Encapsulation",
+							"description": "Excellent!!!",
+							"videos": [
+								{
+									"id": "1"
+								}
+							],
+							"programs": [
+								{
+									"id": "1"
+								}
+							],
+							"documents": []
+						},
+						"student": {
+							"id": "1",
+							"name": "Encapsulation",
+							"description": "Ok Sir...",
+							"videos": [],
+							"programs": [],
+							"documents": [
+								{
+									"id": "1",
+									"name": "Encapsulation docs",
+									"url": "https://youtu.be/zZq_XDhU-rc"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"id": "24",
+				"name": "inheritance",
+				"description": "Inheritance description",
+				"programs": [
+					{
+						"id": "1",
+						"name": "Inheritance Program",
+						"description": "Inheritance Program",
+						"url": "https://raw.githubusercontent.com/GlobalLabstvr/training-programs/master/core-java/abstraction/Shape.java"
+					}
+				],
+				"playlist": [
+					{
+						"id": "1",
+						"name": "Inheritance ",
+						"description": "inheritance desc",
+						"url": "https://www.youtube.com/embed/6V1sr0XV_Ng"
+					}
+				],
+				"slides": [
+					{
+						"id": "1",
+						"name": "slide 1",
+						"description": "slide 1",
+						"master": {
+							"id": "1",
+							"name": "Inheritance",
+							"description": "What do you know about the Inheritance?",
+							"videos": [],
+							"programs": [],
+							"documents": []
+						},
+						"student": {
+							"id": "1",
+							"name": "Inheritance",
+							"description": " inheritance in Java is that you can create new classes that are built upon existing classes",
+							"videos": [],
+							"programs": [],
+							"documents": []
+						}
+					},
+					{
+						"id": "2",
+						"name": "slide 2",
+						"description": "slide 2",
+						"master": {
+							"id": "1",
+							"name": "Inheritance",
+							"description": "Excellent!!!",
+							"videos": [
+								{
+									"id": "1"
+								}
+							],
+							"programs": [
+								{
+									"id": "1"
+								}
+							],
+							"documents": []
+						},
+						"student": {
+							"id": "1",
+							"name": "Inheritance",
+							"description": "Ok Sir...",
+							"videos": [],
+							"programs": [],
+							"documents": [
+								{
+									"id": "1",
+									"name": "inheritance docs",
+									"url": "https://youtu.be/zZq_XDhU-rc"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"id": "25",
+				"name": "polymorphism",
+				"description": "polymorphism description",
+				"programs": [
+					{
+						"id": "1",
+						"name": "polymorphism Program",
+						"description": "polymorphism Program",
+						"url": "https://raw.githubusercontent.com/GlobalLabstvr/training-programs/master/core-java/abstraction/Shape.java"
+					}
+				],
+				"playlist": [
+					{
+						"id": "1",
+						"name": "polymorphism ",
+						"description": "polymorphism desc",
+						"url": "https://www.youtube.com/embed/6V1sr0XV_Ng"
+					}
+				],
+				"slides": [
+					{
+						"id": "1",
+						"name": "slide 1",
+						"description": "slide 1",
+						"master": {
+							"id": "1",
+							"name": "polymorphism",
+							"description": "What do you know about the polymorphism?",
+							"videos": [],
+							"programs": [],
+							"documents": []
+						},
+						"student": {
+							"id": "1",
+							"name": "polymorphism",
+							"description": " Polymorphism in Java is a concept by which we can perform a single action in different ways.",
+							"videos": [],
+							"programs": [],
+							"documents": []
+						}
+					},
+					{
+						"id": "2",
+						"name": "slide 2",
+						"description": "slide 2",
+						"master": {
+							"id": "1",
+							"name": "polymorphism Program",
+							"description": "Excellent!!!",
+							"videos": [
+								{
+									"id": "1"
+								}
+							],
+							"programs": [
+								{
+									"id": "1"
+								}
+							],
+							"documents": []
+						},
+						"student": {
+							"id": "1",
+							"name": "polymorphism",
+							"description": "Ok Sir...",
+							"videos": [],
+							"programs": [],
+							"documents": [
+								{
+									"id": "1",
+									"name": "polymorphism docs",
+									"url": "https://youtu.be/zZq_XDhU-rc"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"id": "26",
+				"name": "overloading",
+				"description": "overloading description",
+				"programs": [
+					{
+						"id": "1",
+						"name": "overloading Program",
+						"description": "overloading Program",
+						"url": "https://raw.githubusercontent.com/GlobalLabstvr/training-programs/master/core-java/abstraction/Shape.java"
+					}
+				],
+				"playlist": [
+					{
+						"id": "1",
+						"name": "overloading ",
+						"description": "overloading desc",
+						"url": "https://www.youtube.com/embed/6V1sr0XV_Ng"
+					}
+				],
+				"slides": [
+					{
+						"id": "1",
+						"name": "slide 1",
+						"description": "slide 1",
+						"master": {
+							"id": "1",
+							"name": "overloading",
+							"description": "What do you know about the overloading?",
+							"videos": [],
+							"programs": [],
+							"documents": []
+						},
+						"student": {
+							"id": "1",
+							"name": "overloading",
+							"description": " Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different.",
+							"videos": [],
+							"programs": [],
+							"documents": []
+						}
+					},
+					{
+						"id": "2",
+						"name": "slide 2",
+						"description": "slide 2",
+						"master": {
+							"id": "1",
+							"name": "overloading Program",
+							"description": "Excellent!!!",
+							"videos": [
+								{
+									"id": "1"
+								}
+							],
+							"programs": [
+								{
+									"id": "1"
+								}
+							],
+							"documents": []
+						},
+						"student": {
+							"id": "1",
+							"name": "overloading",
+							"description": "Ok Sir...",
+							"videos": [],
+							"programs": [],
+							"documents": [
+								{
+									"id": "1",
+									"name": "overloading docs",
+									"url": "https://youtu.be/zZq_XDhU-rc"
+								}
+							]
+						}
+					}
+				]
+			},
+					{
+						"id": "27",
+						"name": "overriding",
+						"description": "overriding description",
+						"programs": [
+							{
+								"id": "1",
+								"name": "overriding Program",
+								"description": "overriding Program",
+								"url": "https://raw.githubusercontent.com/GlobalLabstvr/training-programs/master/core-java/abstraction/Shape.java"
+							}
+						],
+						"playlist": [
+							{
+								"id": "1",
+								"name": "overriding ",
+								"description": "overriding desc",
+								"url": "https://www.youtube.com/embed/6V1sr0XV_Ng"
+							}
+						],
+						"slides": [
+							{
+								"id": "1",
+								"name": "slide 1",
+								"description": "slide 1",
+								"master": {
+									"id": "1",
+									"name": "overriding",
+									"description": "What do you know about the Overriding?",
+									"videos": [],
+									"programs": [],
+									"documents": []
+								},
+								"student": {
+									"id": "1",
+									"name": "overriding",
+									"description": " Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes.",
+									"videos": [],
+									"programs": [],
+									"documents": []
+								}
+							},
+							{
+								"id": "2",
+								"name": "slide 2",
+								"description": "slide 2",
+								"master": {
+									"id": "1",
+									"name": "overriding Program",
+									"description": "Good!!!",
+									"videos": [
+										{
+											"id": "1"
+										}
+									],
+									"programs": [
+										{
+											"id": "1"
+										}
+									],
+									"documents": []
+								},
+								"student": {
+									"id": "1",
+									"name": "overriding",
+									"description": "Ok Sir...",
+									"videos": [],
+									"programs": [],
+									"documents": [
+										{
+											"id": "1",
+											"name": "overriding docs",
+											"url": "https://youtu.be/zZq_XDhU-rc"
+										}
+									]
+								}
+							}
+						]
+					},
+							{
+								"id": "28",
+								"name": "Aggreagation",
+								"description": "aggreagation description",
+								"programs": [
+									{
+										"id": "1",
+										"name": "aggregation Program",
+										"description": "Aggregation Program",
+										"url": "https://raw.githubusercontent.com/GlobalLabstvr/training-programs/master/core-java/abstraction/Shape.java"
+									}
+								],
+								"playlist": [
+									{
+										"id": "1",
+										"name": "Aggregation  ",
+										"description": "Aggreagation desc",
+										"url": "https://www.youtube.com/embed/6V1sr0XV_Ng"
+									}
+								],
+								"slides": [
+									{
+										"id": "1",
+										"name": "slide 1",
+										"description": "slide 1",
+										"master": {
+											"id": "1",
+											"name": "Aggregation",
+											"description": "What do you know about the Aggregation?",
+											"videos": [],
+											"programs": [],
+											"documents": []
+										},
+										"student": {
+											"id": "1",
+											"name": "Aggregation",
+											"description": " Aggregation is a special form of association. It is a relationship between two classes like association.",
+											"videos": [],
+											"programs": [],
+											"documents": []
+										}
+									},
+									{
+										"id": "2",
+										"name": "slide 2",
+										"description": "slide 2",
+										"master": {
+											"id": "1",
+											"name": "aggregation Program",
+											"description": "Excellent!!!",
+											"videos": [
+												{
+													"id": "1"
+												}
+											],
+											"programs": [
+												{
+													"id": "1"
+												}
+											],
+											"documents": []
+										},
+										"student": {
+											"id": "1",
+											"name": "aggregation",
+											"description": "Ok Sir...",
+											"videos": [],
+											"programs": [],
+											"documents": [
+												{
+													"id": "1",
+													"name": "aggregation docs",
+													"url": "https://youtu.be/zZq_XDhU-rc"
+												}
+											]
+										}
+									}
+
+								]
+							},
+							{
+								"id": "29",
+								"name": "Composition",
+								"description": "Composition description",
+								"programs": [
+									{
+										"id": "1",
+										"name": "Composition Program",
+										"description": "Composition Program",
+										"url": "https://raw.githubusercontent.com/GlobalLabstvr/training-programs/master/core-java/abstraction/Shape.java"
+									}
+								],
+								"playlist": [
+									{
+										"id": "1",
+										"name": "Composition ",
+										"description": "Composition desc",
+										"url": "https://www.youtube.com/embed/6V1sr0XV_Ng"
+									}
+								],
+								"slides": [
+									{
+										"id": "1",
+										"name": "slide 1",
+										"description": "slide 1",
+										"master": {
+											"id": "1",
+											"name": "Composition",
+											"description": "What do you know about the Composition?",
+											"videos": [],
+											"programs": [],
+											"documents": []
+										},
+										"student": {
+											"id": "1",
+											"name": "Composition",
+											"description": " Composition in java is the design technique to implement has-a relationship in classes. We can use java inheritance or Object composition in java for code reuse",
+											"videos": [],
+											"programs": [],
+											"documents": []
+										}
+									},
+									{
+										"id": "2",
+										"name": "slide 2",
+										"description": "slide 2",
+										"master": {
+											"id": "1",
+											"name": "composition Program",
+											"description": "Excellent!!!",
+											"videos": [
+												{
+													"id": "1"
+												}
+											],
+											"programs": [
+												{
+													"id": "1"
+												}
+											],
+											"documents": []
+										},
+										"student": {
+											"id": "1",
+											"name": "composition",
+											"description": "Ok Sir...",
+											"videos": [],
+											"programs": [],
+											"documents": [
+												{
+													"id": "1",
+													"name": "composition docs",
+													"url": "https://youtu.be/zZq_XDhU-rc"
+												}
+											]
+										}
+									}
+							
+						]
+					}
+					
+				]
+			}
+			
+
+			
+		
+	

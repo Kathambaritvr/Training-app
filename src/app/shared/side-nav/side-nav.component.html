@@ -1,0 +1,13 @@
+  <div class="sidenav">
+  <mat-accordion class="example">
+  <mat-expansion-panel *ngFor="let course of courses;let i = index">
+    <mat-expansion-panel-header>
+      {{course.name}}
+    </mat-expansion-panel-header>
+    <a 
+    [routerLink]="['/topics/subjects/',subject.id]"  
+      *ngFor="let subject of course.subjects">{{subject.name}}</a>  
+  </mat-expansion-panel>
+ 
+</mat-accordion>
+</div>

@@ -1,0 +1,131 @@
+<div class="jumbotron">
+
+  <mat-tab-group class="example" [selectedIndex]="selectedIndex" (selectedTabChange)="onLinkClick($event)">
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+        Mentoring
+      </ng-template>
+      <div>
+        <app-mentor></app-mentor>
+      </div>
+    </mat-tab>
+
+    
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+        Programs
+      </ng-template>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <mat-card class="example-card">
+            <mat-card-header>{{programName}}</mat-card-header>
+            <mat-card-content>
+              <div class="anyClass">
+                <pre><code [highlight]="code" (highlighted)="onHighlight($event)"></code></pre>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="col-sm-4">
+          <div class="anyClass">
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action active">
+                {{topic.name}}
+              </button>
+              <button type="button" class="list-group-item list-group-item-action"
+                *ngFor="let program of topic.programs" (click)="showProgram(program)"> {{program.name}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+        Videos
+      </ng-template>
+
+      <div class="row">
+        <div class="col-sm-8">
+          <iframe [width]="iframeWidth" height="400" [src]="videoUrl | safe " frameborder="0"
+            style="background:grey; align-content: center"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm-4" *ngIf="showPlaylist">
+          <div class="anyClass">
+            <div class="list-group">
+              <button type="button" class="list-group-item list-group-item-action active">
+                {{topic.name}}
+              </button>
+              <button type="button" class="list-group-item list-group-item-action" 
+                *ngFor="let video of topic.playlist"
+                (click)="showVideo(video.url)"> {{video.name}}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+        Interviews
+      </ng-template>
+      <mat-card class="sample">Diff b/w POPs and OOPs</mat-card><br>
+      <mat-card class="sample">Why Java is not pure object oriented?</mat-card><br>
+      <mat-card class="sample">Is Inheritance supported in java?</mat-card><br>
+      <mat-card class="sample">Define Constructor?</mat-card><br>
+      <mat-card class="sample">Differentiate Overloading and Overriding</mat-card>
+
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">thumb_up</mat-icon>
+          Resources
+        </ng-template>
+        <div>
+          <app-upload></app-upload>
+        </div>
+        <mat-accordion>
+          <mat-expansion-panel *ngFor="let slide of topic.slides">
+            <mat-expansion-panel-header> <b>{{slide.name}}</b> </mat-expansion-panel-header>
+            <div class="row">
+              <div class="col-md-12">
+                <mat-expansion-panel *ngIf="slide.playlist!=''">
+                  <mat-expansion-panel-header> Watch Videos </mat-expansion-panel-header>
+                  <button type="button" class="btn btn-link"
+                    (click)="loadVideos(topic.playlists[getVideoIndex(slide.playlist)].url)">
+                    {{topic.playlists[getVideoIndex(slide.playlist)].name}}</button>
+                </mat-expansion-panel>
+  
+                <mat-expansion-panel  *ngIf="slide.program!==''">
+                  <mat-expansion-panel-header> Practice Programs </mat-expansion-panel-header>
+                  <button type="button" class="btn btn-link" 
+                  (click)="showProgram(topic.programs[getProgramIndex(slide.program)].url)">
+                  {{topic.programs[getProgramIndex(slide.program)].name}}</button>
+                </mat-expansion-panel>
+
+                <!--<mat-expansion-panel  *ngIf="slide.master.programs.length>0">
+                    <mat-expansion-panel-header> Visit Sites </mat-expansion-panel-header>
+                    <button type="button" class="btn btn-link" 
+                      *ngFor="let program of slide.master.programs; let i = index"
+                    (click)="showProgram(program.url)">{{program.name}}</button>
+                  </mat-expansion-panel> -->
+              </div>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-tab>
+
+  </mat-tab-group>
+
+</div>

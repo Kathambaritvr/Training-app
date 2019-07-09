@@ -1,0 +1,44 @@
+   
+<mat-card style="padding-left: 50px; width:400px;">
+
+    <table>
+      <!----
+        <tr>
+            <img style="padding: 10px 50px 25px 10px;  height:120px; width:120px;"  src="../../assets/images/100.png" >
+        </tr>--->
+        <tr>
+            <mat-label style="font-size:40px; margin-bottom: 20px"><b>LOGIN</b></mat-label>
+        </tr>
+      </table>
+
+  
+  <mat-card-content>
+
+    <form class="my-form"  [formGroup]="loginForm">   
+        <mat-form-field  class="full width">
+            <mat-icon matPrefix style="margin-right:8px">account_circle</mat-icon>
+            
+            <mat-label>Email ID</mat-label>
+             <input matInput type="email" tabindex="1" placeholder="" name="Email ID" formControlName="email">
+           </mat-form-field>   
+      <br>
+      <mat-form-field class="full width">
+          <mat-icon matPrefix style="margin-right:8px">lock</mat-icon>
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="" name="password" type="password" formControlName="password">
+          </mat-form-field>
+    </form>
+
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button (click)="login()" color="primary">LOGIN</button>
+    <p>
+    <span class=" ">Don't have an account?
+      <a href="/login/sign-up">Sign up</a></span></p>
+        
+      
+  </mat-card-actions>
+
+  
+</mat-card>

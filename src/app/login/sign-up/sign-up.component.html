@@ -1,0 +1,59 @@
+<div class="main-div">
+<mat-card class="center" style="padding-left: 50px; width:400px;">
+  <table>
+    <tr>
+        <a href="/login"><mat-icon matPrefix >keyboard_backspace</mat-icon></a>
+        <mat-label>Back</mat-label>
+    </tr>
+    <br>
+    <!-----
+      <tr>
+          <img style="padding: 10px 50px 25px 10px;  height:120px; width:120px;"  src="../../assets/images/100.png" >
+      </tr> --->
+      <tr>
+          <mat-label style="font-size:40px; margin-bottom: 20px"><b>REGISTER</b></mat-label>
+      </tr>
+    </table>
+
+    
+
+  <mat-card-content>
+          
+    <form class="my-form" [formGroup]="signUpForm">
+      <mat-form-field class="full width">
+          <mat-icon matPrefix style="margin-right:8px">account_circle</mat-icon>
+        <mat-label>Email ID</mat-label>
+        <input matInput type="email" tabindex="1" placeholder="" name="Email ID" formControlName="email">
+
+      </mat-form-field>
+
+      <br>
+      <mat-form-field class="full width">
+          <mat-icon matPrefix style="margin-right:8px">lock</mat-icon>
+          <mat-label>Password</mat-label>
+          <input matInput type="password" placeholder="" name="Password"  formControlName="password" required>
+          </mat-form-field>
+
+          <br>
+          <mat-form-field class="full width">
+              <mat-icon matPrefix style="margin-right:8px">settings_cell</mat-icon>
+              <mat-label>Mobile No</mat-label>
+              <input matInput type="tel" name="Mobile No" formControlName="phoneNumber">
+              </mat-form-field>
+
+    </form>
+
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button (click)="signUp()" color="primary">Register</button>
+
+    <p>
+    <span class=" ">Not the first time here?
+      <a href="/login">Log in</a></span></p>
+  </mat-card-actions>
+</mat-card>
+</div>  
+    
+  
+  

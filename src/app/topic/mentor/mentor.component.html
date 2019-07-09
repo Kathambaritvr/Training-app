@@ -1,0 +1,75 @@
+<div class="demo-carousel">
+    <mat-carousel #matCarousel [timings]="timings" [autoplay]="autoplay" [interval]="interval" [loop]="loop"
+      [hideArrows]="hideArrows" [hideIndicators]="hideIndicators" [color]="color" [maxWidth]="maxWidth"
+      [proportion]="proportion" [useKeyboard]="useKeyboard" [useMouseWheel]="useMouseWheel" [orientation]="orientation"
+      [slides]="slides">
+      <mat-carousel-slide #matCarouselSlide *ngFor="let slide of topic.slides; let i = index" [hideOverlay]="hideOverlay"
+        image="assets/demo.png">
+        <ng-container>
+          <div class="container">
+            <div class="row" style="padding-top:5%;padding-bottom:5%;">
+              <div class="col-sm-2">
+                <div class="row">
+                <img src='assets/master.png' height="120px">
+                </div>
+                <div class="row" *ngIf="slide.img!==null">
+                  <button type="button" class="btn btn-link"
+                   (click)="openDialog(slide)">Open Diagram</button>
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <div>
+                  <img class="card-img" src="assets/chat.png" 
+                  [height]='getHeight(slide.student,slide)'
+                  alt="Card image">
+                  <div class="card-img-overlay">
+                    <label> {{slide.master}} </label>
+                    <div class="row">
+                      <div class="col">
+                        <label *ngIf="slide.playlist!==''">See this Video</label>
+                        <button type="button" class="btn btn-link"
+                          (click)="loadVideos(topic.playlists[getVideoIndex(slide.playlist)].url)">
+                          {{topic.playlists[getVideoIndex(slide.playlist)].name}}
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <label *ngIf="slide.program !==''">Practice this Program</label>
+                        <button type="button" class="btn btn-link"
+                          (click)="loadProgram(topic.programs[getProgramIndex(slide.program)])">
+                          {{topic?.programs[getProgramIndex(slide.program)]?.name}}
+                        </button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <label *ngIf="slide.site!==''">Visit this Site</label>
+                        <a  target="_blank"
+                          href="{{topic.sites[getSiteIndex(slide.site)]?.url}}">
+                          &nbsp;{{topic.sites[getSiteIndex(slide.site)]?.name}}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-8">
+                <div>
+                   <img class="card-img" src="assets/chat.png" [height]='getStudentDescHeight(slide.student)' alt="Card image">
+                  <div class="card-img-overlay">
+                    <label> {{slide.student}} </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <img src='assets/student.png' height="120">
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </mat-carousel-slide>
+    </mat-carousel>
+  </div>

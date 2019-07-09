@@ -1,0 +1,9 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+- url: /
+  static_files: training-app/index.html
+  upload: training-app/index.html
+- url: /
+  static_dir: training-app
